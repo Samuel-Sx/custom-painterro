@@ -1,30 +1,6 @@
 {
-  "_from": "painterro",
-  "_id": "painterro@1.0.35",
-  "_inBundle": false,
-  "_integrity": "sha1-WUS6GX2Jso8rj27V/rXCp4KlWZc=",
-  "_location": "/painterro",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "painterro",
-    "name": "painterro",
-    "escapedName": "painterro",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npm.taobao.org/painterro/download/painterro-1.0.35.tgz",
-  "_shasum": "5944ba197d89b28f2b8f6ed5feb5c2a782a55997",
-  "_spec": "painterro",
-  "_where": "/Users/samuel/Documents/ELIB/elib-edu-official-yijian",
   "author": {
-    "name": "Ivan Borshchov"
+    "name": "Samuel Sue"
   },
   "bugs": {
     "url": "https://github.com/devforth/painterro/issues"
@@ -60,18 +36,19 @@
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.8.1"
   },
-  "homepage": "https://github.com/devforth/painterro#readme",
+  "homepage": "https://github.com/Samuel-Sx/custom-painterro#readme",
   "keywords": [
     "paint",
     "imageeditor",
-    "image"
+    "image",
+    "drawborad"
   ],
   "license": "MIT",
   "main": "build/painterro.commonjs2.js",
-  "name": "painterro",
+  "name": "coustom-painterro",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devforth/painterro.git"
+    "url": "git+https://github.com/Samuel-Sx/custom-painterro"
   },
   "scripts": {
     "build": "webpack --optimize-minimize --progress",
@@ -80,5 +57,5 @@
     "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.35"
+  "version": "0.0.1"
 }

@@ -15,6 +15,7 @@ function webpackConfig(target) {
   }
 
   return {
+    mode: 'production',
     entry: './js/main.js',
     output: {
       path: path.resolve(__dirname, 'build'),
