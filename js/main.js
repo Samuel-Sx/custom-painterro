@@ -1138,7 +1138,8 @@ class PainterroProc {
     (b.controls || []).forEach((ctl) => {
       ctl.id = genId();
       // if (ctl.title && ctl.type !== 'color') {
-      //   ctrls += `<span class="ptro-tool-ctl-name" title="${tr(ctl.titleFull)}">${tr(ctl.title)}</span>`;
+      // ctrls +=
+      //    `<span class="ptro-tool-ctl-name" title="${tr(ctl.titleFull)}">${tr(ctl.title)}</span>`;
       // }
       if (ctl.type === 'btn') {
         ctrls += `<button type="button" ${ctl.hint ? `title="${tr(ctl.hint)}"` : ''} class="ptro-color-control ${ctl.icon ? 'ptro-icon-btn' : 'ptro-named-btn'}" ` +
@@ -1159,9 +1160,9 @@ class PainterroProc {
             ` value='${o.value}' ${o.title ? `title='${o.title}'` : ''}>${o.name}</option>`;
         });
         ctrls += `<select id=${ctl.id} class="ptro-input" ` +
-          `data-id='${ctl.target}'>${options}</select>`;
-      } else if (ctl.type === 'range'){
-        ctrls += `<input id=${ctl.id} class="ptro-input" data-id='${ctl.target}' type="range" min="${ctl.min}" max="${ctl.max}"/>`
+            ` data-id='${ctl.target}'>${options}</select>`;
+      } else if (ctl.type === 'range') {
+        ctrls += `<input id=${ctl.id} class="ptro-input" data-id='${ctl.target}' type="range" min="${ctl.min}" max="${ctl.max}"/>`;
       }
     });
     this.toolControls.innerHTML = ctrls;

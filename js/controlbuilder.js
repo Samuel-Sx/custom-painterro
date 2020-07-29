@@ -37,7 +37,9 @@ export default class ControlBuilder {
   buildLineWidthControl(controlIndex) {
     const action = () => {
       let width = document.getElementById(this.main.activeTool.controls[controlIndex].id).value;
-      width < 1 && (width = 1) // 限制range最小值
+      if (width < 1) { // 限制range最小值
+        width = 1;
+      }
       this.main.primitiveTool.setLineWidth(width);
       setParam('defaultLineWidth', width);
     };
